@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/productos"
+        android:title="Productos" />
+    <item
+        android:id="@+id/servicios"
+        android:title="Servicios" />
+    <item
+        android:id="@+id/sucursales"
+        android:title="Sucursales" />
+</menu>
