@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@drawable/ic_launcher_foreground"
+    app:showAsAction="ifRoom"
+    >
+
+
+    <item
+        android:id="@+id/inicio"
+        android:icon="@drawable/carrito1"
+        android:title="carrito"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tuperfil"
+        android:title="Tu Perfil" />
+    <item
+        android:id="@+id/productos"
+        android:title="Productos" />
+    <item
+        android:id="@+id/servicios"
+        android:title="Servicios" />
+    <item
+        android:id="@+id/sucursales"
+        android:title="Sucursales" />
+
+    <item
+        android:id="@+id/cotiza"
+        android:title="Cotiza" />
+    <item
+        android:id="@+id/configuracion"
+        android:orderInCategory="100"
+        android:title="Configuración" />
+    <item
+        android:id="@+id/carrito_compras"
+        android:title="Carrito Compras" />
+    <item
+        android:id="@+id/admin_servicios"
+        android:title="Admin Servicios" />
+</menu>
