@@ -31,10 +31,4 @@
         android:id="@+id/configuracion"
         android:orderInCategory="100"
         android:title="Configuración" />
-    <item
-        android:id="@+id/carrito_compras"
-        android:title="Carrito Compras" />
-    <item
-        android:id="@+id/admin_servicios"
-        android:title="Admin Servicios" />
 </menu>

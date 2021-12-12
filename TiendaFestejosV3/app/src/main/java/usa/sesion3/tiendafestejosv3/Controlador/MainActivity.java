@@ -131,26 +131,26 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case R.id.productos:
                 Toast.makeText(this, "Aquí podrán verse todos los productos de la tienda",
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
                 intercambio=getSupportFragmentManager().beginTransaction();
                 intercambio.replace(R.id.contenedor_fragments, subpantalla2).commit();
                 break;
             case R.id.servicios:
                 Toast.makeText(this, "Aquí podrán verse todos los servicios de la tienda",
                         Toast.LENGTH_SHORT).show();
-                intercambio=getSupportFragmentManager().beginTransaction();
-                intercambio.replace(R.id.contenedor_fragments, subpantalla3).commit();
+               Intent pantaservi2 = new Intent(getApplicationContext(), ListaServicios.class);
+               startActivity(pantaservi2);
                 break;
             case R.id.sucursales:
                 Toast.makeText(this, "Aquí podrán verse todas las sucursales de la tienda",
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
                 intercambio=getSupportFragmentManager().beginTransaction();
                 intercambio.replace(R.id.contenedor_fragments, subpantalla4).commit();
                 break;
             case R.id.configuracion:
                 Toast.makeText(this, "Aquí podrán verse y cambiar las configuraciones de la " +
                                 "aplicacion",
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
                 Intent pantaConfig = new Intent(getApplicationContext(), Configuracion.class);
                 startActivity(pantaConfig);
                 intercambio=getSupportFragmentManager().beginTransaction();
@@ -159,22 +159,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.tuperfil:
                 Toast.makeText(this, "Aqui podrá iniciar sesión y configurar perfil de usuario",
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
                 Intent pantaPerfil = new Intent(getApplicationContext(), Tu_Perfil.class);
                 startActivity(pantaPerfil);
                 break;
-            case R.id.carrito_compras:
-                Toast.makeText(this, "Estos son los productos que haz escogido",
-                        Toast.LENGTH_LONG).show();
-                Intent pantaCarrito = new Intent(getApplicationContext(), CarritoCompras.class);
-                startActivity(pantaCarrito);
-                break;
-            case R.id.admin_servicios:
-                Toast.makeText(this, "Estos son los servicios disponibles",
-                        Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), AdmServicios.class);
-                startActivity(intent);
-                break;
+
             default:
                 System.out.println("Error");
 
